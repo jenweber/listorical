@@ -1,5 +1,7 @@
 import Ember from 'ember';
 
+//the route would connect to the store, but until a db is created, this will hold sample data
+
 export default Ember.Route.extend({
   model: function(){
     return [

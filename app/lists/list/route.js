@@ -1,5 +1,8 @@
 import Ember from 'ember';
 
+//the route would connect to the store, but until a db is created, this will hold sample data
+// note the find by at the end which grabs individual records
+
 export default Ember.Route.extend({
   model: function(params){
     return [
@@ -33,6 +36,6 @@ export default Ember.Route.extend({
         'Contemporary Art'
         ]
       },
-    ].findBy('id', params.list_id);
+    ][params.list_id -1];
   }
 });

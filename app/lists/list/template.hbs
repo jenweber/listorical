@@ -1,0 +1,7 @@
+<p>{{model.title}}</p>
+{{#each model.items as |item|}}
+  <p> {{item}} </p>
+{{/each}}
+{{outlet}}
+
+{{!-- substitute item for component --}}
